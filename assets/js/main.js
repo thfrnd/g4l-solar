@@ -288,56 +288,59 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================
-// TYPEWRITER TAGLINE
+// TAGLINE ANIMATION
 // ============================================
 
-const typewriterTitle = document.getElementById('typewriter-title');
-const typewriter = document.getElementById('typewriter');
-const typewriterContent = document.querySelector('.logo-reveal-content');
-const typewriterTitleText = 'Gadgets 4 Lifestyle';
-const typewriterTexts = [
-    'Your Green Gadgets for Your Sustainable Lifestyle'
-];
-let typewriterIndex = 0;
-let currentChar = 0;
+const taglineTitle = document.getElementById('typewriter-title');
+const taglineSubtitle = document.getElementById('typewriter');
+const taglineTitleText = 'Gadgets 4 Lifestyle';
+const taglineSubtitleText = 'Your Green Gadgets for Your Sustainable Lifestyle';
 
-const TYPEWRITER_HOLD_MS = 1800;
-const TYPEWRITER_FADE_MS = 700;
+const TAGLINE_HOLD_MS = 1800;
+const TAGLINE_FADE_MS = 700;
+const TAGLINE_SUBTITLE_TYPE_MS = 70;
 
-function resetTypewriter() {
-    currentChar = 0;
-    if (typewriterTitle) typewriterTitle.textContent = '';
-    if (typewriter) typewriter.textContent = '';
-    if (typewriterContent) typewriterContent.classList.remove('typewriter-fading');
-}
+function runTaglineSubtitleTypewriter() {
+    if (!taglineSubtitle) return;
 
-function runTypewriter() {
-    if (!typewriterTitle || !typewriter || !typewriterContent) return;
+    let currentChar = 0;
+    taglineSubtitle.textContent = '';
+    taglineSubtitle.classList.remove('subtitle-fading');
 
-    const currentText = typewriterTexts[typewriterIndex];
-    const maxLength = Math.max(typewriterTitleText.length, currentText.length);
+    function typeNextCharacter() {
+        taglineSubtitle.textContent = taglineSubtitleText.slice(0, currentChar + 1);
+        currentChar += 1;
 
-    typewriterTitle.textContent = typewriterTitleText.slice(0, Math.min(currentChar + 1, typewriterTitleText.length));
-    typewriter.textContent = currentText.slice(0, Math.min(currentChar + 1, currentText.length));
-    currentChar += 1;
-
-    if (currentChar >= maxLength) {
-        setTimeout(() => {
-            typewriterContent.classList.add('typewriter-fading');
-
-            setTimeout(() => {
-                typewriterIndex = (typewriterIndex + 1) % typewriterTexts.length;
-                resetTypewriter();
-                runTypewriter();
-            }, TYPEWRITER_FADE_MS);
-        }, TYPEWRITER_HOLD_MS);
-        return;
+        if (currentChar < taglineSubtitleText.length) {
+            setTimeout(typeNextCharacter, TAGLINE_SUBTITLE_TYPE_MS);
+        }
     }
 
-    setTimeout(runTypewriter, 70);
+    typeNextCharacter();
 }
 
-document.addEventListener('DOMContentLoaded', runTypewriter);
+function runTaglineCycle() {
+    if (!taglineTitle || !taglineSubtitle) return;
+
+    taglineTitle.textContent = taglineTitleText;
+    taglineTitle.classList.remove('title-fading');
+    runTaglineSubtitleTypewriter();
+
+    const fadeDelay = TAGLINE_SUBTITLE_TYPE_MS * taglineSubtitleText.length + TAGLINE_HOLD_MS;
+
+    setTimeout(() => {
+        taglineTitle.classList.add('title-fading');
+        taglineSubtitle.classList.add('subtitle-fading');
+
+        setTimeout(() => {
+            runTaglineCycle();
+        }, TAGLINE_FADE_MS);
+    }, fadeDelay);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    runTaglineCycle();
+});
 
 // ============================================
 // FADE-UP SECTIONS (generic)
@@ -503,26 +506,135 @@ function initCarousel(containerSelector = '.carousel-container') {
         const slides = container.querySelectorAll('.carousel-slide');
         const prev = container.querySelector('.carousel-prev');
         const next = container.querySelector('.carousel-next');
+        const swipeArea = track ? track.parentElement : null;
+        const autoplayEnabled = container.dataset.carouselAutoplay === 'loop';
         let idx = 0;
+        let isDragging = false;
+        let startX = 0;
+        let currentX = 0;
+        let activePointerId = null;
+        let suppressClick = false;
+        const swipeThreshold = 50;
+        let autoplayTimer = null;
+        const autoplayDelay = 3500;
 
         function update() {
             if (!track) return;
             track.style.transform = `translateX(-${idx * 100}%)`;
         }
 
+        function stopAutoplay() {
+            if (autoplayTimer) {
+                window.clearInterval(autoplayTimer);
+                autoplayTimer = null;
+            }
+        }
+
+        function startAutoplay() {
+            if (!autoplayEnabled || slides.length <= 1 || autoplayTimer) return;
+            autoplayTimer = window.setInterval(() => {
+                idx = (idx + 1) % slides.length;
+                update();
+            }, autoplayDelay);
+        }
+
+        function restartAutoplay() {
+            stopAutoplay();
+            startAutoplay();
+        }
+
+        function getDragOffset() {
+            if (!swipeArea) return 0;
+            return ((currentX - startX) / swipeArea.clientWidth) * 100;
+        }
+
+        function snapToSlide(direction) {
+            if (direction > 0) {
+                idx = (idx - 1 + slides.length) % slides.length;
+            } else if (direction < 0) {
+                idx = (idx + 1) % slides.length;
+            }
+            update();
+        }
+
         prev && prev.addEventListener('click', () => {
             idx = (idx - 1 + slides.length) % slides.length;
             update();
+            restartAutoplay();
         });
 
         next && next.addEventListener('click', () => {
             idx = (idx + 1) % slides.length;
             update();
+            restartAutoplay();
         });
+
+        if (swipeArea) {
+            swipeArea.style.touchAction = 'pan-y';
+
+            swipeArea.addEventListener('pointerdown', (event) => {
+                if (event.pointerType === 'mouse' && event.button !== 0) return;
+                stopAutoplay();
+                isDragging = true;
+                suppressClick = false;
+                startX = event.clientX;
+                currentX = event.clientX;
+                activePointerId = event.pointerId;
+                track.style.transition = 'none';
+                swipeArea.setPointerCapture(event.pointerId);
+            });
+
+            swipeArea.addEventListener('pointermove', (event) => {
+                if (!isDragging || event.pointerId !== activePointerId) return;
+                currentX = event.clientX;
+                const dragOffset = getDragOffset();
+                track.style.transform = `translateX(calc(-${idx * 100}% + ${dragOffset}%))`;
+                if (Math.abs(currentX - startX) > 8) {
+                    suppressClick = true;
+                }
+            });
+
+            const endDrag = (event) => {
+                if (!isDragging || event.pointerId !== activePointerId) return;
+
+                const deltaX = currentX - startX;
+                isDragging = false;
+                activePointerId = null;
+                track.style.transition = '';
+
+                if (Math.abs(deltaX) >= swipeThreshold) {
+                    snapToSlide(deltaX);
+                } else {
+                    update();
+                }
+
+                restartAutoplay();
+                window.setTimeout(() => {
+                    suppressClick = false;
+                }, 0);
+            };
+
+            swipeArea.addEventListener('pointerup', endDrag);
+            swipeArea.addEventListener('pointercancel', endDrag);
+            swipeArea.addEventListener('lostpointercapture', (event) => {
+                if (event.pointerId === activePointerId) {
+                    isDragging = false;
+                    activePointerId = null;
+                    track.style.transition = '';
+                    update();
+                }
+            });
+        }
 
         // Click to open lightbox
         container.querySelectorAll('.open-lightbox').forEach((img, i) => {
-            img.addEventListener('click', () => {
+            img.addEventListener('click', (event) => {
+                if (suppressClick) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return;
+                }
+
                 openLightbox(i, container);
             });
         });
@@ -530,6 +642,10 @@ function initCarousel(containerSelector = '.carousel-container') {
         // responsive: recalc on resize
         window.addEventListener('resize', update);
         update();
+
+        if (autoplayEnabled) {
+            startAutoplay();
+        }
     });
 }
 
