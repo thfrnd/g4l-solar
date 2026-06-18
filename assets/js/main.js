@@ -293,44 +293,44 @@ window.addEventListener('scroll', () => {
 
 const typewriterTitle = document.getElementById('typewriter-title');
 const typewriter = document.getElementById('typewriter');
+const typewriterContent = document.querySelector('.logo-reveal-content');
 const typewriterTitleText = 'Gadgets 4 Lifestyle';
 const typewriterTexts = [
     'Your Green Gadgets for Your Sustainable Lifestyle'
 ];
 let typewriterIndex = 0;
 let currentChar = 0;
-let isErasing = false;
-let isTyping = true;
+
+const TYPEWRITER_HOLD_MS = 1800;
+const TYPEWRITER_FADE_MS = 700;
+
+function resetTypewriter() {
+    currentChar = 0;
+    if (typewriterTitle) typewriterTitle.textContent = '';
+    if (typewriter) typewriter.textContent = '';
+    if (typewriterContent) typewriterContent.classList.remove('typewriter-fading');
+}
 
 function runTypewriter() {
-    if (!typewriterTitle || !typewriter) return;
+    if (!typewriterTitle || !typewriter || !typewriterContent) return;
 
     const currentText = typewriterTexts[typewriterIndex];
     const maxLength = Math.max(typewriterTitleText.length, currentText.length);
-
-    if (isErasing) {
-        currentChar -= 1;
-        typewriterTitle.textContent = typewriterTitleText.slice(0, Math.min(currentChar, typewriterTitleText.length));
-        typewriter.textContent = currentText.slice(0, Math.min(currentChar, currentText.length));
-
-        if (currentChar <= 0) {
-            isErasing = false;
-            typewriterIndex = (typewriterIndex + 1) % typewriterTexts.length;
-            setTimeout(runTypewriter, 600);
-            return;
-        }
-
-        setTimeout(runTypewriter, 50);
-        return;
-    }
 
     typewriterTitle.textContent = typewriterTitleText.slice(0, Math.min(currentChar + 1, typewriterTitleText.length));
     typewriter.textContent = currentText.slice(0, Math.min(currentChar + 1, currentText.length));
     currentChar += 1;
 
     if (currentChar >= maxLength) {
-        isErasing = true;
-        setTimeout(runTypewriter, 1800);
+        setTimeout(() => {
+            typewriterContent.classList.add('typewriter-fading');
+
+            setTimeout(() => {
+                typewriterIndex = (typewriterIndex + 1) % typewriterTexts.length;
+                resetTypewriter();
+                runTypewriter();
+            }, TYPEWRITER_FADE_MS);
+        }, TYPEWRITER_HOLD_MS);
         return;
     }
 
