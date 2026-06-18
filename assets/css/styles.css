@@ -991,6 +991,28 @@ body.lightbox-open {
     background-color: #1a1a1a;
 }
 
+/* ============================================
+   CLIENTS HERO VIDEO SECTION
+   ============================================ */
+
+.clients-hero-container {
+    position: relative;
+    background-color: #1a1a1a;
+}
+
+.clients-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.clients-hero-overlay {
+    pointer-events: none;
+}
+
 .about-hero-content {
     animation: fadeInDown 1s cubic-bezier(.2,.9,.2,1);
 }
@@ -1023,6 +1045,10 @@ body.lightbox-open {
         height: 320px;
     }
 
+    .clients-hero-container {
+        height: 360px;
+    }
+
     .about-hero-title {
         font-size: 2.5rem;
     }
@@ -1035,6 +1061,10 @@ body.lightbox-open {
 @media (max-width: 640px) {
     .about-hero-container {
         height: 280px;
+    }
+
+    .clients-hero-container {
+        height: 300px;
     }
 
     .about-hero-title {
