@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaPower 1800</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        .product-specs,
+        .product-specs:hover,
+        .product-specs .rounded-2xl:hover,
+        .product-specs .rounded-3xl:hover {
+            box-shadow: none !important;
+            transform: none !important;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar-transition fixed w-full top-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-blue-600">
+                        <img src="../../images/g4l-logo.png" alt="G4L logo" class="h-8 w-auto object-contain">
+                        <span class="text-gray-900">Gadgets 4 Lifestyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="../../index.html" class="nav-link  text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="../../about.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="../../products.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Products
+                    </a>
+                    <a href="../../clients.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Clients
+                    </a>
+                    <a href="../../contact.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="hamburger inline-flex items-center justify-center p-2 text-gray-900 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../../index.html" class="mobile-nav-link  block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Home
+                </a>
+                <a href="../../about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    About
+                </a>
+                <a href="../../products.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Products
+                </a>
+                <a href="../../clients.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Clients
+                </a>
+                <a href="../../contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <div class="max-w-7xl mx-auto px-4 pt-4">
+            <a href="index.html" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-blue-200 hover:text-blue-600 hover:shadow-md">
+                <span aria-hidden="true">←</span>
+                Back to Generator Products
+            </a>
+        </div>
+        <!-- Product Hero -->
+        <section class="product-hero bg-white">
+            <div class="max-w-7xl mx-auto px-4 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <!-- Left: Image gallery -->
+                    <div>
+                        <div class="carousel-container bg-gray-50 rounded-lg p-4">
+                            <div class="relative rounded-lg overflow-hidden bg-white">
+                                <img id="product-main-image" src="../../images/products/generators/rapower/rapower-thumbnail.png" alt="RaPower 1800" class="w-full h-[420px] object-contain rounded-lg cursor-zoom-in" />
+                            </div>
+
+                            <!-- Thumbnails -->
+                            <div class="mt-4 flex items-center space-x-3 overflow-x-auto">
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="0" data-src="../../images/products/generators/rapower/rapower-thumbnail.png">
+                                    <img src="../../images/products/generators/rapower/rapower-thumbnail.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-1" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="1" data-src="../../images/products/generators/rapower/rapower-front.png">
+                                    <img src="../../images/products/generators/rapower/rapower-front.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-2" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/generators/rapower/rapower-left-side.png">
+                                    <img src="../../images/products/generators/rapower/rapower-left-side.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/generators/rapower/rapower-right-side.png">
+                                    <img src="../../images/products/generators/rapower/rapower-right-side.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/generators/rapower/rapower-scenario-1.png">
+                                    <img src="../../images/products/generators/rapower/rapower-scenario-1.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/generators/rapower/rapower-scenario-2.png">
+                                    <img src="../../images/products/generators/rapower/rapower-scenario-2.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/generators/rapower/rapower-scenario-3.png">
+                                    <img src="../../images/products/generators/rapower/rapower-scenario-3.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/generators/rapower/rapower-inclusions.png">
+                                    <img src="../../images/products/generators/rapower/rapower-inclusions.png" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Product info -->
+                    <div class="pt-2">
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">RaPower 1800</h1>
+                        <p class="mt-4 text-gray-600 max-w-xl">Dependable everyday backup power.</p>
+
+                        <ul class="mt-6 space-y-3 text-gray-700 list-disc ml-5">
+                            <li>1800W Pure Sine Wave AC Output</li>
+                            <li>1024Wh High-Capacity LiFePO4 Battery</li>
+                            <li>Ultra-Fast AC Charging</li>
+                            <li>Solar Charging Ready</li>
+                            <li>Power Up to 11 Devices Simultaneously</li>
+                        </ul>
+
+                        <div class="mt-8">
+                            <h3 class="text-sm font-semibold text-gray-600">Key Specifications</h3>
+                            <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-gray-700">
+                                <div><strong>Output Power:</strong> 1800W</div>
+                                <div><strong>Battery Type:</strong> LiFePO4</div>
+                                <div><strong>Surge Power:</strong> 3200W</div>
+                                <div><strong>Cycle Life:</strong> 4,000+ Cycles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote anchor -->
+        <section id="quote" class="max-w-7xl mx-auto px-4 py-8">
+            <!-- Simple callout for contact form or instructions -->
+            <div class="bg-gradient-to-r from-blue-50 to-white border rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Need a custom quote?</h4>
+                        <p class="mt-2 text-gray-600">Email us with the product, quantity, and installation details and we'll prepare a competitive proposal.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition" target="_blank" target="_blank">Request a Quote</a>
+                        <a href="../../assets/files/RaPower 1800.png" class="inline-block text-sm text-blue-600 hover:text-blue-800 font-semibold" target="_blank">Download Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed specs section aligned with video width -->
+        <section class="bg-slate-50 py-8 product-specs">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="bg-white border border-gray-200 rounded-3xl shadow-sm overflow-hidden">
+                    <div class="px-6 py-8 lg:px-10 lg:py-10">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-[0.3em] text-blue-600">Product Details</p>
+                                <h2 class="mt-3 text-3xl font-semibold text-slate-900">Product Specifications</h2>
+                            </div>
+                            <p class="text-sm leading-7 text-slate-600 max-w-2xl">RaPower 1800 combines a 1024Wh LiFePO4 battery, 1800W pure sine wave inverter, smart charging, and broad output support into a portable power station built for dependable home backup, travel, and off-grid use.</p>
+                        </div>
+
+                        <div class="mt-8 grid grid-cols-1 gap-6">
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-xl font-semibold text-slate-900">Key Features</h3>
+                                <div class="mt-4 space-y-5 text-slate-600">
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">1800W Pure Sine Wave AC Output</h4>
+                                        <p class="mt-2 leading-7">Delivers <strong>1800W continuous output</strong> with <strong>3600W surge capacity</strong>, allowing it to power refrigerators, microwaves, power tools, coffee makers, televisions, laptops, CPAP machines, routers, drones, and many other household and outdoor devices.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">High-Capacity 1024Wh LiFePO4 Battery</h4>
+                                        <p class="mt-2 leading-7">Built with premium <strong>LiFePO4 battery cells</strong> offering:</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>1024Wh energy storage</li>
+                                            <li>Over <strong>4,000 charge cycles</strong></li>
+                                            <li>Approximately 80% capacity retention after 4,000 cycles</li>
+                                            <li>Superior thermal stability</li>
+                                            <li>Enhanced safety and long service life</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Ultra-Fast AC Charging</h4>
+                                        <p class="mt-2 leading-7">Recharge from <strong>0% to 100% in approximately 1.2 hours</strong> using AC power.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Maximum AC charging power: <strong>1200W</strong></li>
+                                            <li>High charging efficiency up to <strong>96%</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Solar Charging Ready</h4>
+                                        <p class="mt-2 leading-7">Ideal for off-grid applications using compatible solar panels.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Maximum solar charging input: <strong>500W</strong></li>
+                                            <li>MPPT solar charging</li>
+                                            <li>DC input voltage: <strong>10-52V</strong></li>
+                                            <li>Maximum PV input current: <strong>11A</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Vehicle Charging</h4>
+                                        <p class="mt-2 leading-7">Recharge while travelling via your vehicle.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Maximum car charging input: <strong>120W</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Seamless UPS Function</h4>
+                                        <p class="mt-2 leading-7">Provides an <strong>uninterruptible power supply (UPS)</strong> with an automatic switching time of approximately <strong>10ms</strong>, ensuring connected devices continue operating during power outages.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">SmartDrive Technology</h4>
+                                        <p class="mt-2 leading-7">Automatically adjusts inverter performance when compatible connected loads temporarily exceed the rated output, helping maintain reliable power delivery while protecting the system.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Pure Sine Wave Inverter</h4>
+                                        <p class="mt-2 leading-7">Produces clean, stable electricity with <strong>THD below 1.5%</strong>, making it suitable for sensitive electronics including computers, networking equipment, televisions, medical devices, and audio equipment.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Advanced Battery Management System (BMS)</h4>
+                                        <p class="mt-2 leading-7">Comprehensive battery protection continuously monitors system performance to maximize safety, battery life, and operational reliability.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Power Up to 11 Devices Simultaneously</h4>
+                                        <p class="mt-2 leading-7">A wide selection of AC, USB, and DC outputs allows multiple devices to be powered or charged at the same time.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Wireless Monitoring</h4>
+                                        <p class="mt-2 leading-7">Integrated <strong>Wi-Fi and Bluetooth</strong> connectivity enables convenient monitoring and control through a compatible mobile application.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Built-in LED Emergency Light</h4>
+                                        <p class="mt-2 leading-7">Includes a <strong>3W LED light</strong> for camping, emergency situations, and nighttime use.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-xl font-semibold text-slate-900">Technical Specifications</h3>
+
+                                <div class="mt-6 grid grid-cols-1 gap-6">
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Battery</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Battery Type</th><td class="px-4 py-3 text-slate-900">LiFePO4</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Battery Capacity</th><td class="px-4 py-3 text-slate-900">1024Wh</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Nominal Battery Voltage</th><td class="px-4 py-3 text-slate-900">51.2V</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Battery Voltage Range</th><td class="px-4 py-3 text-slate-900">40-60V</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Nominal Charging Current</th><td class="px-4 py-3 text-slate-900">20A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Nominal Discharging Current</th><td class="px-4 py-3 text-slate-900">40A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Maximum Discharging Current</th><td class="px-4 py-3 text-slate-900">50A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Battery Cycle Life</th><td class="px-4 py-3 text-slate-900">4,000+ cycles (80% DOD @25°C)</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">AC Input</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Maximum AC Charging Power</th><td class="px-4 py-3 text-slate-900">1200W</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Input Voltage (100V Model)</th><td class="px-4 py-3 text-slate-900">100VAC</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Input Voltage (230V Model)</th><td class="px-4 py-3 text-slate-900">230VAC</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Voltage Range (100V)</th><td class="px-4 py-3 text-slate-900">85-130V</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Voltage Range (230V)</th><td class="px-4 py-3 text-slate-900">180-260V</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Frequency (100V)</th><td class="px-4 py-3 text-slate-900">60Hz</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Frequency (230V)</th><td class="px-4 py-3 text-slate-900">50Hz</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Frequency Range (100V)</th><td class="px-4 py-3 text-slate-900">55-65Hz</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Frequency Range (230V)</th><td class="px-4 py-3 text-slate-900">45-55Hz</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Power Factor</th><td class="px-4 py-3 text-slate-900">&gt;0.99</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">DC / Solar Input</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Maximum Car Charging Input</th><td class="px-4 py-3 text-slate-900">120W</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Maximum Solar Charging Input</th><td class="px-4 py-3 text-slate-900">500W</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">DC Input Voltage Range</th><td class="px-4 py-3 text-slate-900">10-52V</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Maximum DC / PV Input Current</th><td class="px-4 py-3 text-slate-900">11A</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">AC Output</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Rated AC Output Power</th><td class="px-4 py-3 text-slate-900">1800W</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Peak Surge Power</th><td class="px-4 py-3 text-slate-900">3600W</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Output Voltage</th><td class="px-4 py-3 text-slate-900">100VAC / 230VAC</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Output Frequency</th><td class="px-4 py-3 text-slate-900">50Hz / 60Hz</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Rated Output Current</th><td class="px-4 py-3 text-slate-900">18A (100V) / 7.8A (230V)</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Waveform</th><td class="px-4 py-3 text-slate-900">Pure Sine Wave</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Total Harmonic Distortion (THD)</th><td class="px-4 py-3 text-slate-900">&lt;1.5%</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">USB &amp; DC Outputs</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">USB-C1</th><td class="px-4 py-3 text-slate-900">100W Power Delivery (5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/5A)</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">USB-C2</th><td class="px-4 py-3 text-slate-900">30W Power Delivery</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">USB-C3</th><td class="px-4 py-3 text-slate-900">30W Power Delivery</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">USB-A1</th><td class="px-4 py-3 text-slate-900">30W Fast Charge</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">USB-A2</th><td class="px-4 py-3 text-slate-900">30W Fast Charge</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Car Socket</th><td class="px-4 py-3 text-slate-900">13.2V, 10A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">DC5525 Output 1</th><td class="px-4 py-3 text-slate-900">13.2V, 8A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">DC5525 Output 2</th><td class="px-4 py-3 text-slate-900">13.2V, 8A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Maximum Combined DC Output</th><td class="px-4 py-3 text-slate-900">132W</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Efficiency</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Battery to AC Efficiency</th><td class="px-4 py-3 text-slate-900">Up to 96%</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">AC to Battery Charging Efficiency</th><td class="px-4 py-3 text-slate-900">Up to 96%</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Protection Features</h4>
+                                        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600 list-disc ml-5">
+                                            <li>AC output over-current</li>
+                                            <li>AC output short circuit</li>
+                                            <li>AC charging over-current</li>
+                                            <li>AC output over-voltage</li>
+                                            <li>AC output under-voltage</li>
+                                            <li>AC output over-frequency</li>
+                                            <li>AC output under-frequency</li>
+                                            <li>Inverter over-temperature</li>
+                                            <li>AC charging over-voltage</li>
+                                            <li>AC charging under-voltage</li>
+                                            <li>Battery high temperature</li>
+                                            <li>Battery low temperature</li>
+                                            <li>Battery over-voltage</li>
+                                            <li>Battery under-voltage</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">General Specifications</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Dimensions</th><td class="px-4 py-3 text-slate-900">361.5 × 269.5 × 232.6 mm</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Weight</th><td class="px-4 py-3 text-slate-900">12.7 kg</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Cooling System</th><td class="px-4 py-3 text-slate-900">Forced Air Cooling</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Charging Temperature</th><td class="px-4 py-3 text-slate-900">0°C to 40°C</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Discharging Temperature</th><td class="px-4 py-3 text-slate-900">-15°C to 40°C</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Operating Humidity</th><td class="px-4 py-3 text-slate-900">0-95% RH (Non-condensing)</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Ingress Protection</th><td class="px-4 py-3 text-slate-900">IP20</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Noise Level</th><td class="px-4 py-3 text-slate-900">&lt;65 dB</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Connectivity</th><td class="px-4 py-3 text-slate-900">Wi-Fi &amp; Bluetooth</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">LED Light</th><td class="px-4 py-3 text-slate-900">3W</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Ideal Applications</h4>
+                                        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600 list-disc ml-5">
+                                            <li>Home emergency backup power</li>
+                                            <li>Camping and outdoor adventures</li>
+                                            <li>Caravan and RV travel</li>
+                                            <li>Off-grid cabins</li>
+                                            <li>Job sites and construction work</li>
+                                            <li>Mobile offices</li>
+                                            <li>Photography and drone charging</li>
+                                            <li>Emergency preparedness</li>
+                                            <li>Medical equipment such as CPAP machines</li>
+                                            <li>Backup power for networking and communication equipment</li>
+                                            <li>Outdoor events and exhibitions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Video -->
+        <section class="max-w-7xl mx-auto px-4 py-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Product Video</h3>
+            <div class="rounded-lg overflow-hidden shadow-sm">
+                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                    <iframe src="https://www.youtube.com/embed/iLAqsBYiZ-8?si=R02ufCBQbxiv4wyc" title="RaPower 1800 Commercial Video" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox markup (used by global main.js) -->
+        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+            <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
+            <button id="lightbox-prev" class="absolute left-6 text-white text-3xl">&#10094;</button>
+            <img id="lightbox-image" src="" class="max-h-[85vh] max-w-[90vw] object-contain rounded-lg" alt="">
+            <button id="lightbox-next" class="absolute right-6 text-white text-3xl">&#10095;</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Gadgets 4 Lifestyle</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Solar security and sustainable technology solutions for modern homes, businesses, and institutions across the Philippines.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Email:</span><br>
+                            gadgetsforlifestylehr@gmail.com
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Phone:</span><br>
+                            (02) 7148-7096
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Location:</span><br>
+                            Parañaque City, Metro Manila, Philippines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/facebook-logo.png" alt="Facebook" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.instagram.com/gadgets4lifestyle.ph/" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/instagram-logo.png" alt="Instagram" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.youtube.com/@Gadgets4Lifestyle" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/youtube-logo.png" alt="YouTube" class="w-9 h-9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2026 Gadgets 4 Lifestyle. All rights reserved.<br>
+                    Developed by Thea Fernando
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('.carousel-container');
+        if (!container) return;
+        const mainImage = document.getElementById('product-main-image');
+        const thumbs = container.querySelectorAll('.product-thumb');
+        const imageSources = Array.from(thumbs).map((thumb) => thumb.dataset.src);
+        let activeIndex = 0;
+
+        function setActive(index) {
+            activeIndex = index;
+            mainImage.src = imageSources[index];
+            thumbs.forEach((thumb, i) => {
+                thumb.classList.toggle('ring-2', i === index);
+                thumb.classList.toggle('ring-blue-500', i === index);
+            });
+        }
+
+        thumbs.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => setActive(index));
+        });
+
+        mainImage.addEventListener('click', () => {
+            if (typeof openLightbox === 'function') {
+                openLightbox(activeIndex, container);
+            } else {
+                window.open(mainImage.src, '_blank');
+            }
+        });
+
+        setActive(0);
+    });
+    </script>
+</body>
+</html>

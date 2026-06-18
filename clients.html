@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar-transition fixed w-full top-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-blue-600">
+                        <img src="images/g4l-logo.png" alt="G4L logo" class="h-8 w-auto object-contain">
+                        <span class="text-gray-900">Gadgets 4 Lifestyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link  text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="about.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="products.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Products
+                    </a>
+                    <a href="clients.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Clients
+                    </a>
+                    <a href="contact.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="hamburger inline-flex items-center justify-center p-2 text-gray-900 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link  block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Home
+                </a>
+                <a href="about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    About
+                </a>
+                <a href="products.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Products
+                </a>
+                <a href="clients.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Clients
+                </a>
+                <a href="contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="about-hero" class="about-hero-container relative h-80 md:h-96 overflow-hidden flex items-center justify-center bg-cover bg-center" style="background-image: url('images/clients/government-agency/dpwh-laguna-2nd.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50"></div>
+            <div class="about-hero-content fade-up-content relative z-10 text-center px-4">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wide about-hero-title">
+                    Clients
+                </h1>
+                <p class="text-lg md:text-xl text-gray-100 font-light max-w-2xl mx-auto about-hero-subtitle">
+                    Providing solar security and sustainable technology solutions to LGUs, government agencies, and cooperatives nationwide.
+                </p>
+            </div>
+        </section>
+
+        <!--=============== CLIENT PORTFOLIO ===============-->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16 sm:space-y-20">
+            <div class="space-y-12 sm:space-y-16">
+                <section class="rounded-2xl sm:rounded-3xl bg-white p-6 sm:p-8 shadow-lg">
+                    <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr] lg:items-center">
+                    <div>
+                        <p class="text-sm uppercase tracking-[0.35em] text-black-custom/60">Client portfolio</p>
+                        <h2 class="text-4xl font-semibold text-black-custom mt-4">Trusted partners across public and cooperative sectors</h2>
+                        <p class="text-gray-600 mt-5 max-w-2xl leading-relaxed">Our work reaches local government units, government agencies, and cooperatives. Each project is guided by reliable solar technology, dependable delivery, and a commitment to community impact.</p>
+                    </div>
+                    <div class="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 mt-6 sm:mt-0">
+                        <a href="#lgu" class="rounded-3xl bg-black-custom p-6 text-white shadow-lg transition transform hover:-translate-y-1 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black-custom focus:ring-offset-2">
+                            <h3 class="text-xl font-semibold">Local Government Units</h3>
+                            <p class="mt-3 text-sm text-gray-200">Solar upgrades and energy partnerships for municipalities, provinces, and city projects.</p>
+                        </a>
+                        <a href="#government-agencies" class="rounded-3xl bg-black-custom p-6 text-white shadow-lg transition transform hover:-translate-y-1 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black-custom focus:ring-offset-2">
+                            <h3 class="text-xl font-semibold">Government Agencies</h3>
+                            <p class="mt-3 text-sm text-gray-200">Trusted infrastructure support for public agencies and nationwide programs.</p>
+                        </a>
+                        <a href="#cooperatives" class="rounded-3xl bg-black-custom p-6 text-white shadow-lg transition transform hover:-translate-y-1 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black-custom focus:ring-offset-2 sm:col-span-2">
+                            <h3 class="text-xl font-semibold">Cooperatives</h3>
+                            <p class="mt-3 text-sm text-gray-200">Cooperative energy projects designed for shared value, savings, and sustainability.</p>
+                        </a>
+                        <a href="#deliveries" class="rounded-3xl bg-black-custom p-6 text-white shadow-lg transition transform hover:-translate-y-1 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black-custom focus:ring-offset-2">
+                            <h3 class="text-xl font-semibold">Deliveries</h3>
+                            <p class="mt-3 text-sm text-gray-200">Reliable logistics and careful handling to keep every project on schedule.</p>
+                        </a>
+                        <a href="#installations" class="rounded-3xl bg-black-custom p-6 text-white shadow-lg transition transform hover:-translate-y-1 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black-custom focus:ring-offset-2 sm:col-span-2 lg:col-span-1">
+                            <h3 class="text-xl font-semibold">Installations</h3>
+                            <p class="mt-3 text-sm text-gray-200">Certified site work and system setup for safe, high-performance solar deployment.</p>
+                        </a>
+                    </div>
+                    </div>
+                </section>
+
+                <section id="lgu" class="scroll-mt-24 rounded-3xl bg-slate-100 p-8 shadow-lg">
+                    <div class="md:flex md:items-start md:justify-between md:gap-8">
+                    <div class="max-w-3xl">
+                        <h2 class="text-3xl font-semibold text-black-custom">Local Government Units</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">We work closely with local government units (LGUs) to promote renewable energy, helping cities, municipalities, and provinces harness the benefits of solar technology for a more sustainable and cost-efficient future.</p>
+                    </div>
+                    </div>
+                    <div class="clients-gallery-carousel mt-6 sm:mt-8">
+                        <div class="relative">
+                            <div class="overflow-hidden rounded-2xl">
+                                <div class="gallery-track flex transition-transform duration-500 ease-out">
+                                    <!-- Slide 1: Images 1-4 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-legazpi.jpg" alt="Mayor Hashim Ismail - Municipality of Legazpi" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-ligao.jpg" alt="Mayor Fernando Gonzales - Municipality of Ligao" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-naga.jpg" alt="Mayor Leni Robredo - Municipality of Naga" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-goa.jpg" alt="Mayor Raquel Lim - Municipality of Goa" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2: Images 5-8 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-calabanga.jpg" alt="Mayor Philip Dumalasa of Municipality of Calabanga" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-gumaca.jpg" alt="Mayor Webster Letargo of Municipality of Gumaca" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-laoag.jpg" alt="Municipality of Laoag" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/councilor-areiz-naga.jpg" alt="Councilor Areiz Macaraig - Naga City Hall" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3: Images 9-12 (Add more as available) -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-tuguegarao.jpg" alt="Mayor Maila Ting-Que - City of Tuguegarao" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-burgos.jpg" alt="Mayor Crescente Garcia - Municipality of Burgos" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-currimao.jpg" alt="Mayor Edward Quilala - Municipality of Currimao" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/governor-singson.jpg" alt="Governor Jerry Singson - Provincial Government of Ilocos Sur" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 4: Images 13-16 
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/mayor-calabanga.jpg" alt="LGU Client 13" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/pili.jpg" alt="LGU Client 14" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/lgu/sipocot.jpg" alt="LGU Client 15" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/dpwh-camsur-2nd.jpg" alt="LGU Client 16" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div> -->
+                                </div> 
+                            </div>
+                            
+                            <!-- Navigation Arrows -->
+                            <button class="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 sm:-translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Previous gallery">
+                                <i class="ri-arrow-left-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                            <button class="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 sm:translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Next gallery">
+                                <i class="ri-arrow-right-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="government-agencies" class="scroll-mt-24 rounded-2xl sm:rounded-3xl bg-white p-6 sm:p-8 shadow-lg">
+                    <div class="space-y-4 sm:space-y-0 md:flex md:items-start md:justify-between md:gap-8">
+                    <div class="max-w-3xl">
+                        <h2 class="text-2xl sm:text-3xl font-semibold text-black-custom">Government Agencies</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">Trusted by government agencies for nearly a decade, we deliver solar solutions that support sustainable public infrastructure and critical facilities with clarity and precision.</p>
+                    </div>
+                    </div>
+                    <div class="clients-gallery-carousel mt-6 sm:mt-8">
+                        <div class="relative">
+                            <div class="overflow-hidden rounded-2xl">
+                                <div class="gallery-track flex transition-transform duration-500 ease-out">
+                                    <!-- Slide 1: Images 1-4 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-albay-1st.jpg" alt="DPWH Albay 1st DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-albay-2nd.jpg" alt="DPWH Albay 2nd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-albay-3rd.jpg" alt="DPWH Albay 3rd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-camsur-1st.jpg" alt="DPWH Cam Sur 1st DEO" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2: Images 5-8 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-camsur-2nd.jpg" alt="DPWH Cam Sur 2nd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-camsur-3rd.jpg" alt="DPWH Cam Sur 3rd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-camsur-4th.jpg" alt="DPWH Cam Sur 4th DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-camsur-5th.jpg" alt="DPWH Cam Sur 5th DEO" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3-6: Placeholder images for additional 16 images -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/pso-naga.jpg" alt="PSO Naga" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/pso-naga-2.jpg" alt="PSO Naga 2" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-region-4a.jpg" alt="DPWH Region 4A" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-rizal-1st.jpg" alt="DPWH Rizal 1st DEO" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-rizal-2ns.jpg" alt="DPWH Rizal 2nd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-laguna-2nd.jpg" alt="DPWH Laguna 2nd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-laguna-3rd.jpg" alt="DPWH Laguna 3rd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-las-pinas-deo.jpg" alt="DPWH Las Piñas DEO" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-mm3-valenzuela.jpg" alt="DPWH MM3 Valenzuela" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-quezon-3rd.jpg" alt="DPWH Quezon 3rd DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-quezon-4th.jpg" alt="DPWH Quezon 4th DEO" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/bir-rdo-6.jpg" alt="BIR RDO No. 6" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/bir-rdo-31.jpg" alt="BIR RDO No. 31" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/bir-rdo-44.jpg" alt="BIR RDO No. 44" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/" alt="Government Agency 23" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/government-agency/dpwh-camsur-5th.jpg" alt="Government Agency 24" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation Arrows -->
+                            <button class="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 sm:-translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Previous gallery">
+                                <i class="ri-arrow-left-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                            <button class="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 sm:translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Next gallery">
+                                <i class="ri-arrow-right-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="cooperatives" class="scroll-mt-24 rounded-2xl sm:rounded-3xl bg-slate-100 p-6 sm:p-8 shadow-lg">
+                    <div class="space-y-4 sm:space-y-0 md:flex md:items-start md:justify-between md:gap-8">
+                    <div class="max-w-3xl">
+                        <h2 class="text-2xl sm:text-3xl font-semibold text-black-custom">Cooperatives</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">In partnership with cooperatives, we introduce income-generating opportunities while ensuring members benefit from clean, reliable solar energy and supportive system services.</p>
+                    </div>
+                    </div>
+                    <div class="clients-gallery-carousel mt-6 sm:mt-8">
+                        <div class="relative">
+                            <div class="overflow-hidden rounded-2xl">
+                                <div class="gallery-track flex transition-transform duration-500 ease-out">
+                                    <!-- Slide 1: Images 1-4 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/mempc.jpg" alt="MRT-3 Metro Star Employees Multi-Purpose Cooperative (MEMPC)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/mmcfcc.jpg" alt="Makati Medical Center Family Credit Cooperative (MMCFCC)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/pempco.jpg" alt="POEA Employees Multi-Purpose Cooperative (PEMPCO)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/sdcc.jpg" alt="San Dionisio Credit Cooperative (SDCC)" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2: Images 5-8 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/acdi-coop.jpg" alt="ACDI Multi-Purpose Cooperative" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/naga-imaging-center.jpg" alt="Naga Imaging Center Cooperative Doctors Hospital" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/san-agustin-coop.jpg" alt="San Agustin-San Ramon Agrarian Reform Farmers Cooperative (SARFC)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/camsur-coop.jpg" alt="Cam Sur Multi-Purpose Cooperative" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/telescoop.jpg" alt="PLDT Employees Multi-Purpose Cooperative (TELESCOOP)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/acempc.jpg" alt="Albay Capitol Employees Multi-Purpose Cooperative (ACEMPC)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/acempc-1.jpg" alt="Albay Capitol Employees Multi-Purpose Cooperative (ACEMPC)" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/Magandang Buhay Multi-Purpose Cooperative.jpg" alt="Magandang Buhay Multi-Purpose Cooperative" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/naga-imaging-center.jpg" alt="Cooperative 13" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/san-agustin-coop.jpg" alt="Cooperative 14" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/mempc.jpg" alt="Cooperative 15" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/mmcfcc.jpg" alt="Cooperative 16" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/pempco.jpg" alt="Cooperative 17" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/sdcc.jpg" alt="Cooperative 18" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/acdi-coop.jpg" alt="Cooperative 19" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/naga-imaging-center.jpg" alt="Cooperative 20" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/san-agustin-coop.jpg" alt="Cooperative 21" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/mempc.jpg" alt="Cooperative 22" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/mmcfcc.jpg" alt="Cooperative 23" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/cooperative/pempco.jpg" alt="Cooperative 24" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                -->
+                                </div>
+                            </div>
+                            <!-- Navigation Arrows -->
+                            <button class="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 sm:-translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Previous gallery">
+                                <i class="ri-arrow-left-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                            <button class="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 sm:translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Next gallery">
+                                <i class="ri-arrow-right-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="deliveries" class="scroll-mt-24 rounded-2xl sm:rounded-3xl bg-gray-100 p-6 sm:p-8 shadow-lg">
+                    <div class="space-y-4 sm:space-y-0 md:flex md:items-start md:justify-between md:gap-8">
+                    <div class="max-w-3xl">
+                        <h2 class="text-2xl sm:text-3xl font-semibold text-black-custom">Deliveries</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">We deliver solar equipment and system components with speed, care, and coordination so every project has the materials it needs to start on time.</p>
+                    </div>
+                    </div>
+                    <div class="clients-gallery-carousel mt-6 sm:mt-8">
+                        <div class="relative">
+                            <div class="overflow-hidden rounded-2xl">
+                                <div class="gallery-track flex transition-transform duration-500 ease-out">
+                                    <!-- Slide 1: Images 1-4 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/1.jpg" alt="Delivery truck unloading solar components" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/2.jpg" alt="Solar equipment delivery at DPWH site" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/3.jpg" alt="Team preparing deliveries for installation" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/4.jpg" alt="Delivery staging at DPWH CamSur site" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2: Images 5-8 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/5.jpg" alt="Solar equipment load for delivery" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/6.jpg" alt="Supplies ready for delivery at site" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/7.jpg" alt="Delivery staging at another DPWH site" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/8.jpg" alt="Delivery logistics at Laguna project" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3-6: Placeholder for additional 16 images -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/9.jpg" alt="Solar deliveries arriving in Laguna" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/1.jpg" alt="Delivery 10" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/2.jpg" alt="Delivery 11" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/3.jpg" alt="Delivery 12" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/4.jpg" alt="Delivery 13" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/5.jpg" alt="Delivery 14" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/6.jpg" alt="Delivery 15" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/7.jpg" alt="Delivery 16" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/8.jpg" alt="Delivery 17" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/9.jpg" alt="Delivery 18" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/1.jpg" alt="Delivery 19" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/2.jpg" alt="Delivery 20" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/3.jpg" alt="Delivery 21" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/4.jpg" alt="Delivery 22" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/5.jpg" alt="Delivery 23" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/deliveries/6.jpg" alt="Delivery 24" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation Arrows -->
+                            <button class="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 sm:-translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Previous gallery">
+                                <i class="ri-arrow-left-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                            <button class="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 sm:translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Next gallery">
+                                <i class="ri-arrow-right-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="rounded-xl sm:rounded-3xl bg-white p-4 sm:p-6 shadow-md">
+                        <h3 class="text-base sm:text-lg font-semibold text-black-custom">Timely Logistics</h3>
+                        <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">A dedicated delivery process ensures solar products reach your site on schedule.</p>
+                    </div>
+                    <div class="rounded-xl sm:rounded-3xl bg-white p-4 sm:p-6 shadow-md">
+                        <h3 class="text-base sm:text-lg font-semibold text-black-custom">Secure Handling</h3>
+                        <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">All equipment is handled carefully to preserve quality from warehouse to installation.</p>
+                    </div>
+                    <div class="rounded-xl sm:rounded-3xl bg-white p-4 sm:p-6 shadow-md">
+                        <h3 class="text-base sm:text-lg font-semibold text-black-custom">Clear Communication</h3>
+                        <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">We keep you informed of delivery timing and prepare your team for arrival.</p>
+                    </div>
+                    </div>
+                </section>
+
+                <section id="installations" class="scroll-mt-24 rounded-2xl sm:rounded-3xl bg-white p-6 sm:p-8 shadow-lg">
+                    <div class="space-y-4 sm:space-y-0 md:flex md:items-start md:justify-between md:gap-8">
+                    <div class="max-w-3xl">
+                        <h2 class="text-2xl sm:text-3xl font-semibold text-black-custom">Installations</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">Our certified installation team carefully sets up systems to deliver safe, reliable, and high-performance solar power at every site.</p>
+                    </div>
+                    </div>
+                    <div class="clients-gallery-carousel mt-6 sm:mt-8">
+                        <div class="relative">
+                            <div class="overflow-hidden rounded-2xl">
+                                <div class="gallery-track flex transition-transform duration-500 ease-out">
+                                    <!-- Slide 1: Images 1-4 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/1.jpg" alt="Solar installation team at a DPWH site" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/2.jpg" alt="Technical team installing solar panels" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/3.jpg" alt="Completed solar installation project" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/4.jpg" alt="Installation team at DPWH CamSur" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2: Images 5-8 -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/5.jpg" alt="Solar installation in Rizal" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/6.jpg" alt="Installation site in Rizal" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/8.jpg" alt="Queued installation panels at Quezon" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/9.jfif" alt="Queued installation panels at Quezon" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3-6: Placeholder for additional 16 images -->
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/10.jfif" alt="Installation 9" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/11.jfif" alt="Installation 10" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/12.jfif" alt="Installation 11" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/13.jfif" alt="Installation 12" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/14.jfif" alt="Installation 13" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/15.jfif" alt="Installation 14" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/16.jfif" alt="Installation 15" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/17.jfif" alt="Installation 16" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/1e8207b4-5e7d-4abe-bc56-cd5f24eb61d4.jfif" alt="Installation 17" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/15.jfif" alt="Installation 18" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/1.jpg" alt="Installation 19" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/2.jpg" alt="Installation 20" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slide min-w-full">
+                                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/3.jpg" alt="Installation 21" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/4.jpg" alt="Installation 22" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/5.jpg" alt="Installation 23" onclick="openClientGallery(this)">
+                                            <img class="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition" src="images/clients/installations/6.jpg" alt="Installation 24" onclick="openClientGallery(this)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation Arrows -->
+                            <button class="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 sm:-translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Previous gallery">
+                                <i class="ri-arrow-left-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                            <button class="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 sm:translate-x-16 bg-black-custom hover:bg-gray-800 text-white rounded-full p-2 sm:p-3 transition z-10" aria-label="Next gallery">
+                                <i class="ri-arrow-right-s-line text-xl sm:text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="rounded-xl sm:rounded-3xl bg-gray-100 p-4 sm:p-6 shadow-md">
+                        <h3 class="text-base sm:text-lg font-semibold text-black-custom">Professional Teams</h3>
+                        <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">Experienced technicians complete each installation to industry standards.</p>
+                    </div>
+                    <div class="rounded-xl sm:rounded-3xl bg-gray-100 p-4 sm:p-6 shadow-md">
+                        <h3 class="text-base sm:text-lg font-semibold text-black-custom">Quality Assurance</h3>
+                        <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">We verify every connection and component for long-lasting and efficient operation.</p>
+                    </div>
+                    <div class="rounded-xl sm:rounded-3xl bg-gray-100 p-4 sm:p-6 shadow-md">
+                        <h3 class="text-base sm:text-lg font-semibold text-black-custom">Post-Install Support</h3>
+                        <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">Ongoing support is available after installation to keep your system running smoothly.</p>
+                    </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--
+            <p class="max-w-3xl mx-auto text-center text-gray-600 text-sm sm:text-base leading-relaxed px-4">These organizations trust Gadgets 4 Lifestyle to deliver reliable solar, security, and sustainability solutions that support their communities and operations.</p>
+            -->
+        </section>
+
+        <div id="lightboxOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 px-4 py-8">
+            <div class="relative w-full max-w-6xl h-full flex items-center justify-center">
+                <button id="lightboxClose" class="absolute top-4 right-4 text-white text-4xl leading-none p-2 rounded-full hover:bg-white/10 transition" aria-label="Close lightbox">×</button>
+                <button id="lightboxPrev" class="absolute left-4 text-white text-4xl p-3 rounded-full bg-black/40 hover:bg-black/60 transition" aria-label="Previous image">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <img id="lightboxImage" class="max-h-[85vh] max-w-full rounded-3xl shadow-2xl" src="" alt="Client photo">
+                <button id="lightboxNext" class="absolute right-4 text-white text-4xl p-3 rounded-full bg-black/40 hover:bg-black/60 transition" aria-label="Next image">
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Gadgets 4 Lifestyle</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Solar security and sustainable technology solutions for modern homes, businesses, and institutions across the Philippines.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Email:</span><br>
+                            gadgetsforlifestylehr@gmail.com
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Phone:</span><br>
+                            (02) 7148-7096
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Location:</span><br>
+                            Parañaque City, Metro Manila, Philippines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="images/facebook-logo.png" alt="Facebook" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.instagram.com/gadgets4lifestyle.ph/" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="images/instagram-logo.png" alt="Instagram" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.youtube.com/@Gadgets4Lifestyle" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img src="images/youtube-logo.png" alt="YouTube" class="w-9 h-9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2026 Gadgets 4 Lifestyle. All rights reserved.<br>
+                    Developed by Thea Fernando
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

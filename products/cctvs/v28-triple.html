@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V28 3.0 Triple Lens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        .product-specs,
+        .product-specs:hover,
+        .product-specs .rounded-2xl:hover,
+        .product-specs .rounded-3xl:hover {
+            box-shadow: none !important;
+            transform: none !important;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar-transition fixed w-full top-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-blue-600">
+                        <img src="../../images/g4l-logo.png" alt="G4L logo" class="h-8 w-auto object-contain">
+                        <span class="text-gray-900">Gadgets 4 Lifestyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="../../index.html" class="nav-link  text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="../../about.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="../../products.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Products
+                    </a>
+                    <a href="../../clients.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Clients
+                    </a>
+                    <a href="../../contact.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="hamburger inline-flex items-center justify-center p-2 text-gray-900 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../../index.html" class="mobile-nav-link  block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Home
+                </a>
+                <a href="../../about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    About
+                </a>
+                <a href="../../products.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Products
+                </a>
+                <a href="../../clients.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Clients
+                </a>
+                <a href="../../contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <div class="max-w-7xl mx-auto px-4 pt-4">
+            <a href="index.html" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-blue-200 hover:text-blue-600 hover:shadow-md">
+                <span aria-hidden="true">←</span>
+                Back to CCTV Products
+            </a>
+        </div>
+        <!-- Product Hero -->
+        <section class="product-hero bg-white">
+            <div class="max-w-7xl mx-auto px-4 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <!-- Left: Image gallery -->
+                    <div>
+                        <div class="carousel-container bg-gray-50 rounded-lg p-4">
+                            <div class="relative rounded-lg overflow-hidden bg-white">
+                                <img id="product-main-image" src="../../images/products/cctvs/v28-triple/1.jpg" alt="V28 3.0 Triple Lens" class="w-full h-[420px] object-contain rounded-lg cursor-zoom-in" />
+                            </div>
+
+                            <!-- Thumbnails -->
+                            <div class="mt-4 flex items-center space-x-3 overflow-x-auto">
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="0" data-src="../../images/products/cctvs/v28-triple/1.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/1.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-1" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="1" data-src="../../images/products/cctvs/v28-triple/2.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/2.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-2" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="2" data-src="../../images/products/cctvs/v28-triple/3.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/3.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-3" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="3" data-src="../../images/products/cctvs/v28-triple/4.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/4.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-4" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="4" data-src="../../images/products/cctvs/v28-triple/5.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/5.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-5" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="5" data-src="../../images/products/cctvs/v28-triple/6.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/6.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-6" loading="lazy">
+                                </button>
+                                <button class="product-thumb ring-1 ring-transparent rounded-md p-1 focus:outline-none" data-index="4" data-src="../../images/products/cctvs/v28-triple/7.jpg">
+                                    <img src="../../images/products/cctvs/v28-triple/7.jpg" class="w-20 h-14 object-cover rounded-md" alt="thumb-7" loading="lazy">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Product info -->
+                    <div class="pt-2">
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">V28 3.0 Triple Lens</h1>
+                        <p class="mt-4 text-gray-600 max-w-xl">Triple the View. Zero Compromise.</p>
+
+                        <ul class="mt-6 space-y-3 text-gray-700 list-disc ml-5">
+                            <li>4K Ultra HD Dual-Stream Video</li>
+                            <li>Full-Color Night Vision</li>
+                            <li>Smart AI Tracking Technology</li>
+                            <li>Built-In Alarm & Dual LED Security Lights</li>
+                            <li>Solar Powered with 20000mAh LiFePO4 Battery</li>
+                        </ul>
+
+                        <div class="mt-8">
+                            <h3 class="text-sm font-semibold text-gray-600">Key Specifications</h3>
+                            <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-gray-700">
+                                <div><strong>Resolution:</strong> 9MP Full HD</div>
+                                <div><strong>Zoom:</strong> 10× Hybrid Optical Zoom</div>
+                                <div><strong>Monitoring:</strong> Triple Lens, One-Screen View</div>
+                                <div><strong>Protection:</strong> IP66 Waterproof</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote anchor -->
+        <section id="quote" class="max-w-7xl mx-auto px-4 py-8">
+            <!-- Simple callout for contact form or instructions -->
+            <div class="bg-gradient-to-r from-blue-50 to-white border rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Need a custom quote?</h4>
+                        <p class="mt-2 text-gray-600">Email us with the product, quantity, and installation details and we'll prepare a competitive proposal.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition" target="_blank">Request a Quote</a>
+                        <a href="../../assets/files/V28 3.0 Triple Lens.png" class="inline-block text-sm text-blue-600 hover:text-blue-800 font-semibold" target="_blank">Download Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed specs section aligned with video width -->
+        <section class="bg-slate-50 py-8 product-specs">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="bg-white border border-gray-200 rounded-3xl shadow-sm overflow-hidden">
+                    <div class="px-6 py-8 lg:px-10 lg:py-10">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-[0.3em] text-blue-600">Product Details</p>
+                                <h2 class="mt-3 text-3xl font-semibold text-slate-900">Product Specifications</h2>
+                            </div>
+                            <p class="text-sm leading-7 text-slate-600 max-w-2xl">The V28 4G Dual Lens Security Camera combines 4G LTE connectivity, dual-lens monitoring, AI human detection, full-color night vision, and solar-powered operation into a reliable outdoor security solution for remote locations and everyday monitoring.</p>
+                        </div>
+
+                        <div class="mt-8 grid grid-cols-1 gap-6">
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-xl font-semibold text-slate-900">Key Features</h3>
+                                <div class="mt-4 space-y-5 text-slate-600">
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">4G LTE Connectivity</h4>
+                                        <p class="mt-2 leading-7">Stay connected anywhere without requiring Wi-Fi.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Stable 4G network connection</li>
+                                            <li>Ideal for remote locations</li>
+                                            <li>Supports Cat1 and Cat4 LTE networks</li>
+                                            <li>Remote monitoring via O-KAM Pro App</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Dual Lens Monitoring</h4>
+                                        <p class="mt-2 leading-7">Monitor two different viewing areas simultaneously using:</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Wide-angle panoramic camera</li>
+                                            <li>Tracking camera with zoom capability</li>
+                                            <li>Intelligent dual-lens linkage</li>
+                                            <li>Automatic zoom tracking</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">AI Human Detection</h4>
+                                        <p class="mt-2 leading-7">Advanced AI intelligently distinguishes human movement from other objects, minimizing false alarms.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Human detection</li>
+                                            <li>PIR motion detection</li>
+                                            <li>Custom detection zones</li>
+                                            <li>Intelligent alarm notifications</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Full-Color Night Vision</h4>
+                                        <p class="mt-2 leading-7">Capture clear footage day and night with dual light source technology.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>11 infrared LEDs</li>
+                                            <li>11 white LEDs</li>
+                                            <li>Automatic day/night switching</li>
+                                            <li>Full-color night vision</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Solar Powered</h4>
+                                        <p class="mt-2 leading-7">Designed for long-term outdoor operation.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Includes solar panel</li>
+                                            <li>Built-in rechargeable battery</li>
+                                            <li>Energy-efficient low-power system</li>
+                                            <li>Continuous charging during daylight</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Massive 8000mAh Battery</h4>
+                                        <p class="mt-2 leading-7">High-capacity rechargeable battery provides extended operation with intelligent power management.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Built-in 8000mAh battery</li>
+                                            <li>Low battery warning</li>
+                                            <li>Ultra-low standby power consumption</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Two-Way Audio</h4>
+                                        <p class="mt-2 leading-7">Communicate remotely using the built-in microphone and speaker with real-time voice intercom through the mobile app.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Fast Event Recording</h4>
+                                        <p class="mt-2 leading-7">Starts recording within <strong>400ms</strong> after motion detection to capture important events quickly.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Free Cloud Storage</h4>
+                                        <p class="mt-2 leading-7">Includes complimentary cloud storage for alarm recordings and also supports loop recording and TF card storage up to 256GB.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Smart Alarm System</h4>
+                                        <p class="mt-2 leading-7">Receive instant notifications when motion is detected.</p>
+                                        <ul class="mt-3 list-disc space-y-2 ml-5">
+                                            <li>Human detection alerts</li>
+                                            <li>PIR motion detection</li>
+                                            <li>Sound and light alarm</li>
+                                            <li>Custom alarm sounds</li>
+                                            <li>App push notifications</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900">Remote Access</h4>
+                                        <p class="mt-2 leading-7">View live video and playback anytime using the O-KAM Pro mobile application with live viewing, playback, remote control, device management, and up to four simultaneous users.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-xl font-semibold text-slate-900">Technical Specifications</h3>
+
+                                <div class="mt-6 grid grid-cols-1 gap-6">
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">System</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Operating System</th><td class="px-4 py-3 text-slate-900">Linux</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Mobile App</th><td class="px-4 py-3 text-slate-900">O-KAM Pro</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Simultaneous Online Users</th><td class="px-4 py-3 text-slate-900">Up to 4</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Camera</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">CPU</th><td class="px-4 py-3 text-slate-900">T23ZN</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Internal Storage</th><td class="px-4 py-3 text-slate-900">512MB</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Image Sensor</th><td class="px-4 py-3 text-slate-900">3 × GC2083</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Minimum Illumination</th><td class="px-4 py-3 text-slate-900">0.8 Lux (Color), 0.3 Lux (Black &amp; White)</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Lens</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Panorama Camera</th><td class="px-4 py-3 text-slate-900">4mm Lens (1G3P)</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Tracking Camera</th><td class="px-4 py-3 text-slate-900">4mm (1G3P) + 12mm (1G2P)</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Viewing Angle</th><td class="px-4 py-3 text-slate-900">100°</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Pan Rotation</th><td class="px-4 py-3 text-slate-900">270°</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Tilt Rotation</th><td class="px-4 py-3 text-slate-900">90°</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Video</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Main Stream</th><td class="px-4 py-3 text-slate-900">1080P @ 15fps</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Sub Stream</th><td class="px-4 py-3 text-slate-900">360P @ 15fps</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Compression</th><td class="px-4 py-3 text-slate-900">MJPEG / JPEG</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Bit Rate</th><td class="px-4 py-3 text-slate-900">128-4096 kbps</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Image Adjustment</th><td class="px-4 py-3 text-slate-900">Vertical and Horizontal Adjustment</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">OSD Display</th><td class="px-4 py-3 text-slate-900">Supported</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Night Vision</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Night Vision Type</th><td class="px-4 py-3 text-slate-900">Full Color</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Infrared LEDs</th><td class="px-4 py-3 text-slate-900">11</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">White LEDs</th><td class="px-4 py-3 text-slate-900">11</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Automatic IR Switching</th><td class="px-4 py-3 text-slate-900">Yes</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Audio</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Microphone</th><td class="px-4 py-3 text-slate-900">Built-in (-38dB)</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Speaker</th><td class="px-4 py-3 text-slate-900">Built-in 8Ω 1W</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Audio Compression</th><td class="px-4 py-3 text-slate-900">G711A</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Sampling Rate</th><td class="px-4 py-3 text-slate-900">8KHz / 16-bit</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Two-Way Audio</th><td class="px-4 py-3 text-slate-900">Yes</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">AI Features</h4>
+                                        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600 list-disc ml-5">
+                                            <li>Human Detection</li>
+                                            <li>PIR Motion Detection</li>
+                                            <li>Custom Activity Zones</li>
+                                            <li>Intelligent Alarm Push Notifications</li>
+                                            <li>Smart Alarm Sounds</li>
+                                            <li>Future AI Support for Pets</li>
+                                            <li>Future AI Support for Vehicles</li>
+                                            <li>Future AI Support for Package Detection</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Network</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Connection</th><td class="px-4 py-3 text-slate-900">4G LTE</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Mobile App</th><td class="px-4 py-3 text-slate-900">O-KAM Pro</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">QR Code Pairing</th><td class="px-4 py-3 text-slate-900">Supported</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Supported Networks</th><td class="px-4 py-3 text-slate-900">Cat1 &amp; Cat4 LTE</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Storage</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">TF Card</th><td class="px-4 py-3 text-slate-900">Up to 256GB</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Cloud Storage</th><td class="px-4 py-3 text-slate-900">Free Loop Recording</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Alarm Functions</h4>
+                                        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600 list-disc ml-5">
+                                            <li>Human Detection</li>
+                                            <li>PIR Detection</li>
+                                            <li>Detection Distance: 10 metres</li>
+                                            <li>Sound Alarm</li>
+                                            <li>Light Alarm</li>
+                                            <li>Full-Color Night Warning Lights</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Power</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Battery Capacity</th><td class="px-4 py-3 text-slate-900">8000mAh</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Charging</th><td class="px-4 py-3 text-slate-900">Solar Panel + DC</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Input Voltage</th><td class="px-4 py-3 text-slate-900">DC 5V ±5%</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Power Consumption</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Sleep Standby</th><td class="px-4 py-3 text-slate-900">300uA</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Working</th><td class="px-4 py-3 text-slate-900">400mA - 1.8A Max</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Environmental Specifications</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Operating Temperature</th><td class="px-4 py-3 text-slate-900">-10°C to 55°C</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Operating Humidity</th><td class="px-4 py-3 text-slate-900">&lt;90% RH</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Physical Specifications</h4>
+                                        <div class="mt-3 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                                            <table class="min-w-full text-sm">
+                                                <tbody class="divide-y divide-slate-200">
+                                                    <tr><th class="w-1/2 px-4 py-3 text-left font-medium text-slate-600">Dimensions</th><td class="px-4 py-3 text-slate-900">183 × 164 × 122 mm</td></tr>
+                                                    <tr><th class="px-4 py-3 text-left font-medium text-slate-600">Weight</th><td class="px-4 py-3 text-slate-900">680 g</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Package Contents</h4>
+                                        <ul class="mt-3 grid grid-cols-1 gap-2 text-slate-600 list-disc ml-5">
+                                            <li>V28 4G Dual Lens Security Camera</li>
+                                            <li>Solar Panel</li>
+                                            <li>Solar Panel Mounting Bracket</li>
+                                            <li>User Manual</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                                        <h4 class="text-base font-semibold text-slate-900">Ideal Applications</h4>
+                                        <p class="mt-3 text-slate-600 leading-7">The V28 is ideal for:</p>
+                                        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600 list-disc ml-5">
+                                            <li>Residential security</li>
+                                            <li>Farms and agricultural properties</li>
+                                            <li>Construction sites</li>
+                                            <li>Warehouses</li>
+                                            <li>Vacation homes</li>
+                                            <li>Parking areas</li>
+                                            <li>Shops and small businesses</li>
+                                            <li>Remote locations without Wi-Fi</li>
+                                            <li>Outdoor perimeter monitoring</li>
+                                            <li>Off-grid surveillance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Video -->
+        <section class="max-w-7xl mx-auto px-4 py-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Product Video</h3>
+            <div class="rounded-lg overflow-hidden shadow-sm">
+                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                    <iframe src="https://www.youtube.com/embed/79HaGYREoPs?si=70O1kenVaZym_C8b" title="V28 3.0 Triple Lens Commercial Video" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox markup (used by global main.js) -->
+        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+            <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
+            <button id="lightbox-prev" class="absolute left-6 text-white text-3xl">&#10094;</button>
+            <img id="lightbox-image" src="" class="max-h-[85vh] max-w-[90vw] object-contain rounded-lg" alt="">
+            <button id="lightbox-next" class="absolute right-6 text-white text-3xl">&#10095;</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Gadgets 4 Lifestyle</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Solar security and sustainable technology solutions for modern homes, businesses, and institutions across the Philippines.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Email:</span><br>
+                            gadgetsforlifestylehr@gmail.com
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Phone:</span><br>
+                            (02) 7148-7096
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Location:</span><br>
+                            Parañaque City, Metro Manila, Philippines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/facebook-logo.png" alt="Facebook" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.instagram.com/gadgets4lifestyle.ph/" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/instagram-logo.png" alt="Instagram" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.youtube.com/@Gadgets4Lifestyle" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/youtube-logo.png" alt="YouTube" class="w-9 h-9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2026 Gadgets 4 Lifestyle. All rights reserved.<br>
+                    Developed by Thea Fernando
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('.carousel-container');
+        if (!container) return;
+        const mainImage = document.getElementById('product-main-image');
+        const thumbs = container.querySelectorAll('.product-thumb');
+        const imageSources = Array.from(thumbs).map((thumb) => thumb.dataset.src);
+        let activeIndex = 0;
+
+        function setActive(index) {
+            activeIndex = index;
+            mainImage.src = imageSources[index];
+            thumbs.forEach((thumb, i) => {
+                thumb.classList.toggle('ring-2', i === index);
+                thumb.classList.toggle('ring-blue-500', i === index);
+            });
+        }
+
+        thumbs.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => setActive(index));
+        });
+
+        mainImage.addEventListener('click', () => {
+            if (typeof openLightbox === 'function') {
+                openLightbox(activeIndex, container);
+            } else {
+                window.open(mainImage.src, '_blank');
+            }
+        });
+
+        setActive(0);
+    });
+    </script>
+</body>
+</html>

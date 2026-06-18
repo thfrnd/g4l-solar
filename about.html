@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar-transition fixed w-full top-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-blue-600">
+                        <img src="images/g4l-logo.png" alt="G4L logo" class="h-8 w-auto object-contain">
+                        <span class="text-gray-900">Gadgets 4 Lifestyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link  text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="about.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="products.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Products
+                    </a>
+                    <a href="clients.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Clients
+                    </a>
+                    <a href="contact.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="hamburger inline-flex items-center justify-center p-2 text-gray-900 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link  block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Home
+                </a>
+                <a href="about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    About
+                </a>
+                <a href="products.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Products
+                </a>
+                <a href="clients.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Clients
+                </a>
+                <a href="contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="about-hero" class="about-hero-container relative h-80 md:h-96 overflow-hidden flex items-center justify-center bg-cover bg-center" style="background-image: url('images/ADC06923.JPG');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50"></div>
+            <div class="about-hero-content fade-up-content relative z-10 text-center px-4">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wide about-hero-title">
+                    About Us
+                </h1>
+                <p class="text-lg md:text-xl text-gray-100 font-light max-w-2xl mx-auto about-hero-subtitle">
+                    Leading the Way in Solar Solutions and Sustainable Technology
+                </p>
+            </div>
+        </section>
+
+        <!-- Company History Section -->
+        <section id="history" class="py-12 md:py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center">Company History</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Discover our journey and the milestones that shaped G4L into a leading provider of solar solutions.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Left: Text Content -->
+                    <div class="history-text fade-left-content">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Journey</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Founded in 2003 in Makati City, JME Company was established under the visionary leadership of its founding President, Mr. Ramon Hernandez Jr. The company initially specialized in corporate giveaways and promotional items, quickly earning a reputation for quality, reliability, and innovation.
+                        </p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Over the years, JME expanded its footprint beyond Metro Manila, successfully penetrating key markets across the Visayas and Mindanao. Through consistent excellence and customer-centric service, the company not only met expectations—but consistently exceeded them—building long-term relationships with a growing base of satisfied clients.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            As the 21st century ushered in the rapid rise of wireless and smart technologies, the company strategically evolved to stay ahead of industry trends. This transformation led to the birth of Gadgets 4 Lifestyle (G4L) on March 30, 2015.
+                        </p>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div class="history-image fade-right-content" style="transition-delay: 0.2s;">
+                        <img src="images/g4l-logo-office.jpg" alt="Company History placeholder image" class="w-full rounded-lg shadow-lg object-cover h-96">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
+                    <!-- Left: Image -->
+                    <div class="history-image fade-left-content" style="transition-delay: 0.2s;">
+                        <img src="images/cctv-products.jpg" alt="Company Milestones placeholder image" class="w-full rounded-lg shadow-lg object-cover h-96">
+                    </div>
+
+                    <!-- Right: Text Content -->
+                    <div class="history-text fade-right-content">
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            G4L was established with a clear mission: to introduce cutting-edge, high-performance, and future-ready technologies to the market. Today, the company stands as a trusted and exclusive distributor of innovative solutions, including solar-powered security systems, portable generators, and advanced AI-integrated gadgets.
+                        </p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Driven by innovation and sustainability, G4L continues to empower LGU’s, Private Companies, and Cooperatives with reliable, eco-friendly, and technologically advanced products—positioning itself at the forefront of the modern lifestyle and energy revolution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission, Vision & Goals Section -->
+        <section id="mission-vision-goals" class="py-12 md:py-16 px-4 bg-slate-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Mission, Vision & Goals</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Our purpose, long-term direction, and measurable goals are built around sustainable growth and trusted customer solutions.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <article class="fade-up-content h-full flex flex-col p-8 bg-white rounded-3xl border border-slate-200 shadow-sm transition duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <div class="mb-6 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12">
+                                <path d="M12 2l3.5 7H20l-5.5 4.5L15.5 21 12 16.5 8.5 21l1-7.5L4 9h4.5L12 2z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Mission</h3>
+                            <p class="text-gray-600 leading-relaxed">To become a leading provider of sustainable and smart technology.</p>
+                        </div>
+                    </article>
+
+                    <article class="fade-up-content h-full flex flex-col p-8 bg-white rounded-3xl border border-slate-200 shadow-sm transition duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <div class="mb-6 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Vision</h3>
+                            <p class="text-gray-600 leading-relaxed">To empower modern lifestyle through innovative tech solutions.</p>
+                        </div>
+                    </article>
+
+                    <article class="fade-up-content md:col-span-2 h-full flex flex-col p-8 bg-white rounded-3xl border border-slate-200 shadow-sm transition duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <div class="mb-6 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12">
+                                <path d="M5 11l4 4L19 5" />
+                                <path d="M19 22H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8l6 6v11a2 2 0 0 1-2 2z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Goals</h3>
+                            <p class="text-gray-600 leading-relaxed">At G4L, our goal is to become one of the leading and most trusted modern technology providers in the Philippines by delivering innovative, high-quality, and reliable solar security systems, portable power solutions and smart solutions that improve everyday life.
+                            <br><br>
+                            We strive to continuously expand our reach, strengthen customer satisfaction through excellent service and after-sales support, and build long-term partnerships that drive sustainable growth, innovation, and success for both the company and our valued clients.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-12 md:py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Certifications</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Our certifications highlight the rigorous standards we meet, reflecting trust and quality in solar security and sustainable technology solutions.</p>
+                </div>
+
+                <div class="carousel-container certifications-carousel relative max-w-4xl mx-auto">
+                    <div class="carousel-frame relative overflow-hidden rounded-3xl">
+                        <button class="carousel-prev absolute left-[-1.6rem] top-1/2 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md z-10" aria-label="Previous">‹</button>
+                        <button class="carousel-next absolute right-[-1.6rem] top-1/2 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md z-10" aria-label="Next">›</button>
+                        <div class="carousel-track flex transition-transform duration-500">
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/certifications/1.jpg" alt="Certification 1" class="w-full rounded-3xl cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/certifications/2.jpg" alt="Certification 2" class="w-full rounded-3xl cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/certifications/3.JPG" alt="Certification 3" class="w-full rounded-3xl cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/certifications/4.JPG" alt="Certification 3" class="w-full rounded-3xl cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/certifications/5.jpg" alt="Certification 3" class="w-full rounded-3xl cursor-pointer open-lightbox">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 max-w-3xl mx-auto">Gadgets 4 Lifestyle (G4L) is officially Q Asia Certified, two times in a row! Recognizing our commitment to excellence and quality. As an authorized user of the IPO-registered Q Asia Magazine Inc. seal and logo for a lifetime, we uphold the highest standards in our products and services. This certification reinforces our credibility and allows us to feature the Q Asia seal in our marketing promotions and product labels. However, to maintain its validity, the seal must be exclusively used without other award seals. This recognition highlights G4L's dedication to delivering top-notch technology and innovative solutions to our customers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Video Section 
+        <section id="video" class="py-12 md:py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Story</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Watch how Gadgets 4 Lifestyle continues to lead the way in solar solutions and sustainable technology innovation.</p>
+                </div>
+
+                <div class="youtube-container rounded-3xl overflow-hidden shadow-2xl">
+                    <iframe 
+                        class="youtube-iframe"
+                        src="https://www.youtube.com/embed/ZebrH5XVdGI?si=U2nWfWxzcPVMPxqq" 
+                        title="Gadgets 4 Lifestyle - Our Story"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <p class="text-center text-gray-600 mt-8 text-sm">Share our vision for sustainable technology and solar innovation in the Philippines.</p>
+            </div>
+        </section> -->
+
+        <!-- Lightbox Modal (hidden) -->
+        <div id="lightbox" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-80 px-4 py-8">
+            <button id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl p-2">✕</button>
+            <button id="lightbox-prev" class="absolute left-4 text-white text-4xl p-2">‹</button>
+            <div class="lightbox-content max-w-5xl max-h-[90vh] mx-auto w-full">
+                <img id="lightbox-image" src="" alt="" class="w-full h-auto rounded-3xl shadow-2xl">
+            </div>
+            <button id="lightbox-next" class="absolute right-4 text-white text-4xl p-2">›</button>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Gadgets 4 Lifestyle</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Solar security and sustainable technology solutions for modern homes, businesses, and institutions across the Philippines.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Email:</span><br>
+                            gadgetsforlifestylehr@gmail.com
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Phone:</span><br>
+                            (02) 7148-7096
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Location:</span><br>
+                            Parañaque City, Metro Manila, Philippines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="images/facebook-logo.png" alt="Facebook" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.instagram.com/gadgets4lifestyle.ph/" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="images/instagram-logo.png" alt="Instagram" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.youtube.com/@Gadgets4Lifestyle" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img src="images/youtube-logo.png" alt="YouTube" class="w-9 h-9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2026 Gadgets 4 Lifestyle. All rights reserved.<br>
+                    Developed by Thea Fernando
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

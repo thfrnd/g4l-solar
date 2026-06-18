@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar-transition fixed w-full top-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../../index.html" class="flex items-center gap-3 text-2xl font-bold text-blue-600">
+                        <img src="../../images/g4l-logo.png" alt="G4L logo" class="h-8 w-auto object-contain">
+                        <span class="text-gray-900">Gadgets 4 Lifestyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="../../index.html" class="nav-link  text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="../../about.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="../../products.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Products
+                    </a>
+                    <a href="../../clients.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Clients
+                    </a>
+                    <a href="../../contact.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="hamburger inline-flex items-center justify-center p-2 text-gray-900 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../../index.html" class="mobile-nav-link  block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Home
+                </a>
+                <a href="../../about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    About
+                </a>
+                <a href="../../products.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Products
+                </a>
+                <a href="../../clients.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Clients
+                </a>
+                <a href="../../contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Security Systems Hero Section -->
+        <section class="hero-banner relative overflow-hidden" style="background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('../../images/hero-all-products.png');">
+            <div class="hero-banner-overlay absolute inset-0 bg-slate-950/60"></div>
+            <div class="hero-banner-content relative z-10 max-w-4xl mx-auto px-6 py-24 text-center text-white">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight">
+                    Security Systems
+                </h1>
+                <p class="mt-4 text-base sm:text-lg text-slate-200 max-w-2xl mx-auto">
+                    Our security systems include CCTV cameras, access control, alarm monitoring and smart integration to keep homes, offices, and communities safe 24/7.
+                </p>
+            </div>
+        </section>
+
+        <!-- Security Systems Product Listing -->
+        <section id="security-products" class="product-listing bg-slate-50 py-16 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-up-content">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sky-500">Security Systems</p>
+                    <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-slate-600">
+                        Explore trusted security products for safer homes, businesses, and communities.
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <article class="product-card group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_20px_50px_-25px_rgba(15,23,42,0.35)] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_25px_70px_-30px_rgba(15,23,42,0.28)] fade-up-content">
+                        <div class="grid gap-6 lg:grid-cols-[420px_minmax(0,1fr)]">
+                            <div class="product-media h-72 lg:h-[320px]">
+                                <img src="../../images/products/cctvs/v28-triple/1.jpg" alt="Secure Monitoring Interface" class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105">
+                            </div>
+                            <div class="p-6 lg:p-8 flex flex-col justify-between">
+                                <div>
+                                    <span class="inline-block text-sm uppercase tracking-[0.35em] text-slate-400">Intelligent Monitoring</span>
+                                    <h3 class="mt-4 text-2xl font-semibold text-slate-900">V28 3.0 Triple Lens</h3>
+                                    <p class="mt-3 text-slate-600 leading-7">A premium 9MP triple-lens solar security camera with AI smart tracking, 10× hybrid zoom, 4G connectivity, and full-color night vision for advanced all-around surveillance.</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="v28-triple.html" class="view-details-button inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition duration-300 hover:bg-slate-800 hover:shadow-slate-900/25">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_20px_50px_-25px_rgba(15,23,42,0.35)] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_25px_70px_-30px_rgba(15,23,42,0.28)] fade-up-content">
+                        <div class="grid gap-6 lg:grid-cols-[420px_minmax(0,1fr)]">
+                            <div class="product-media h-72 lg:h-[320px]">
+                                <img src="../../images/products/cctvs/ecoview/1.png" alt="G4L V18 EcoView" class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105">
+                            </div>
+                            <div class="p-6 lg:p-8 flex flex-col justify-between">
+                                <div>
+                                    <span class="inline-block text-sm uppercase tracking-[0.35em] text-slate-400">Smart CCTV</span>
+                                    <h3 class="mt-4 text-2xl font-semibold text-slate-900">G4L V18 EcoView</h3>
+                                    <p class="mt-3 text-slate-600 leading-7">A compact AI-powered security camera featuring 1080P Full HD video, 355° panoramic coverage, human tracking, two-way audio, and smart motion alerts for reliable indoor monitoring..</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="ecoview.html" class="view-details-button inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition duration-300 hover:bg-slate-800 hover:shadow-slate-900/25">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_20px_50px_-25px_rgba(15,23,42,0.35)] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_25px_70px_-30px_rgba(15,23,42,0.28)] fade-up-content">
+                        <div class="grid gap-6 lg:grid-cols-[420px_minmax(0,1fr)]">
+                            <div class="product-media h-72 lg:h-[320px]">
+                                <img src="../../images/products/cctvs/sunsight/9.png" alt="SunSight AI 5G / Wi-Fi" class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105">
+                            </div>
+                            <div class="p-6 lg:p-8 flex flex-col justify-between">
+                                <div>
+                                    <span class="inline-block text-sm uppercase tracking-[0.35em] text-slate-400">Smart Security</span>
+                                    <h3 class="mt-4 text-2xl font-semibold text-slate-900">SunSight AI 5G / Wi-Fi</h3>
+                                    <p class="mt-3 text-slate-600 leading-7">A solar-powered 4MP Ultra HD security camera with 4G/Wi-Fi connectivity, full-color night vision, PIR human detection, and remote monitoring for dependable outdoor protection.</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="sunsight.html" class="view-details-button inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition duration-300 hover:bg-slate-800 hover:shadow-slate-900/25">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_20px_50px_-25px_rgba(15,23,42,0.35)] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_25px_70px_-30px_rgba(15,23,42,0.28)] fade-up-content">
+                        <div class="grid gap-6 lg:grid-cols-[420px_minmax(0,1fr)]">
+                            <div class="product-media h-72 lg:h-[320px]">
+                                <img src="../../images/products/cctvs/ra-horizon/1.png" alt="SunSight AI 5G / Wi-Fi" class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105">
+                            </div>
+                            <div class="p-6 lg:p-8 flex flex-col justify-between">
+                                <div>
+                                    <span class="inline-block text-sm uppercase tracking-[0.35em] text-slate-400">Smart Security</span>
+                                    <h3 class="mt-4 text-2xl font-semibold text-slate-900">Ra Horizon 20x</h3>
+                                    <p class="mt-3 text-slate-600 leading-7">A solar-powered 4MP Ultra HD security camera with 4G/Wi-Fi connectivity, full-color night vision, PIR human detection, and remote monitoring for dependable outdoor protection.</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="ra-horizon.html" class="view-details-button inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition duration-300 hover:bg-slate-800 hover:shadow-slate-900/25">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Gadgets 4 Lifestyle</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Solar security and sustainable technology solutions for modern homes, businesses, and institutions across the Philippines.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Email:</span><br>
+                            gadgetsforlifestylehr@gmail.com
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Phone:</span><br>
+                            (02) 7148-7096
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Location:</span><br>
+                            Parañaque City, Metro Manila, Philippines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/facebook-logo.png" alt="Facebook" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.instagram.com/gadgets4lifestyle.ph/" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/instagram-logo.png" alt="Instagram" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.youtube.com/@Gadgets4Lifestyle" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img src="../../images/youtube-logo.png" alt="YouTube" class="w-9 h-9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2026 Gadgets 4 Lifestyle. All rights reserved.<br>
+                    Developed by Thea Fernando
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
+

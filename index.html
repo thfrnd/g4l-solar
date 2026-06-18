@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar-transition fixed w-full top-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-blue-600">
+                        <img src="images/g4l-logo.png" alt="G4L logo" class="h-8 w-auto object-contain">
+                        <span class="text-gray-900">Gadgets 4 Lifestyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link  text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="about.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="products.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Products
+                    </a>
+                    <a href="clients.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Clients
+                    </a>
+                    <a href="contact.html" class="nav-link text-gray-900 font-medium text-sm hover:text-blue-600">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="hamburger inline-flex items-center justify-center p-2 text-gray-900 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link  block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Home
+                </a>
+                <a href="about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    About
+                </a>
+                <a href="products.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Products
+                </a>
+                <a href="clients.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Clients
+                </a>
+                <a href="contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-gray-900 font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Video Section -->
+        <section id="home" class="hero-video-container">
+            <video id="hero-video" class="hero-video" autoplay muted playsinline>
+                <source src="videos/AVP.mp4" type="video/mp4">
+                <!-- Fallback for browsers that don't support video -->
+                <img src="images/hero-fallback.jpg" alt="Hero Background" style="width: 100%; height: 100%; object-fit: cover;">
+            </video>
+            <div class="hero-overlay" id="hero-overlay"></div>
+            <div class="hero-content" id="hero-content">
+                <h1>Welcome to</h1>
+                <p></p>
+                <a href="#logo-reveal" class="hero-scroll-arrow" aria-label="Scroll to logo and tagline">
+                    <span class="hero-scroll-arrow-icon">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Logo & Tagline Reveal Section -->
+        <section id="logo-reveal" class="logo-reveal-container">
+            <div class="logo-reveal-content">
+                <div class="logo-wrapper">
+                    <img src="images/g4l-logo.png" alt="G4L logo" class="logo-image" id="logo-image">
+                </div>
+                <h2 class="tagline"><span id="typewriter-title"></span></h2>
+                <p class="tagline-subtitle">
+                    <span id="typewriter"></span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Who Are We? Section -->
+        <section id="who" class="py-12 px-4 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="fade-up-section">
+                    <div class="fade-up-content">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Who Are We?</h2>
+                        <p class="text-lg text-gray-600 mx-auto">Gadgets for Lifestyle or G4L Solar Technology is a premier provider of cutting-edge solar security systems and power generators in the Philippines. Committed to sustainability and innovation, we offer smart, science-driven solutions that enhance safety and efficiency in both residential and commercial settings. Our advanced solar technologies harness renewable energy to deliver reliable power, ensuring communities have access to sustainable and cost-effective energy solutions.
+                        <br><br>
+                        At G4L, we believe in empowering individuals and businesses through smart energy solutions that improve everyday living. Our products are designed to provide security, convenience, and resilience, addressing the growing demand for eco-friendly and efficient power alternatives. With a strong focus on quality and customer satisfaction, we continuously develop innovative systems that contribute to a safer, greener future for all.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solar Systems Showcase (replaces About) -->
+        <section id="solar" class="py-12 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">The Trusted Provider of Solar Solutions in the Philippines</h2>
+                <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-8">At Gadgets 4 Lifestyle, we take pride in delivering high-quality solar solutions that prioritize innovation, sustainability, and efficiency. We are committed to providing top-notch services tailored to the unique needs of our clients, whether they are private individuals, businesses, or government institutions. Our expertise spans cutting-edge solar security systems and power generators, ensuring reliable and eco-friendly energy solutions. With a focus on excellence and customer satisfaction, we aim to empower communities and organizations to embrace a smarter, safer, and more sustainable future.</p>
+
+                <div class="carousel-container relative max-w-4xl mx-auto">
+                    <button class="carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md z-10" aria-label="Previous">‹</button>
+
+                    <div class="overflow-hidden">
+                        <div class="carousel-track flex transition-transform duration-500">
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/mayor-naga.jpg" alt="Solar 1" class="w-full rounded-lg cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/mayor-legazpi.jpg" alt="Solar 2" class="w-full rounded-lg cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/mayor-ligao.jpg" alt="Solar 3" class="w-full rounded-lg cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/clients/lgu/mayor-goa.jpg" alt="Solar 3" class="w-full rounded-lg cursor-pointer open-lightbox">
+                            </div>
+                            <div class="carousel-slide flex-shrink-0 w-full px-2">
+                                <img src="images/clients/lgu/mayor-gumaca.jpg" alt="Solar 3" class="w-full rounded-lg cursor-pointer open-lightbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md z-10" aria-label="Next">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-12 px-4 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Our Products</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Explore our core product categories — engineered for performance and reliability.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card: Solar Systems -->
+                    <article class="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="product-media overflow-hidden">
+                            <img src="images/products/v28-2.png" alt="Solar Systems" class="w-full h-56 object-cover transform transition-transform duration-700">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Solar Systems</h3>
+                            <p class="text-gray-600 mb-4">Smart protection for residential and commercial properties.</p>
+                            <a href="products/cctvs/index.html" class="block w-full">
+                                <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-medium">View More</button>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card: Portable Generators -->
+                    <article class="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="product-media overflow-hidden">
+                            <img src="images/products/solarismax.png" alt="Portable Generators" class="w-full h-56 object-cover transform transition-transform duration-700">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Portable Generators</h3>
+                            <p class="text-gray-600 mb-4">Reliable portable power built for durability and convenience.</p>
+                            <a href="products/generators/index.html" class="block w-full">
+                                <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-medium">View More</button>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card: Innovative Gadgets -->
+                    <article class="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="product-media overflow-hidden">
+                            <img src="images/products/chronova-x.png" alt="Innovative Gadgets" class="w-full h-56 object-cover transform transition-transform duration-700">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Innovative Gadgets</h3>
+                            <p class="text-gray-600 mb-4">Connected devices designed for everyday convenience.</p>
+                            <a href="products/gadgets/index.html" class="block w-full">
+                                <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-medium">View More</button>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section id="coming-soon" class="coming-soon-container relative h-96 md:h-screen overflow-hidden flex items-center justify-center bg-cover bg-center" style="background-image: url('images/products/celluxia-coming-soon.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
+            <div class="coming-soon-content relative z-10 text-center px-4">
+                <div class="coming-soon-text">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal (hidden) -->
+    <div id="lightbox" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-80">
+        <button id="lightbox-close" class="absolute top-4 right-4 text-white text-2xl p-2">✕</button>
+        <button id="lightbox-prev" class="absolute left-4 text-white text-3xl p-2">‹</button>
+        <div class="lightbox-content max-w-4xl max-h-[90vh] mx-auto px-4">
+            <img id="lightbox-image" src="" alt="" class="w-full h-auto rounded-lg">
+        </div>
+        <button id="lightbox-next" class="absolute right-4 text-white text-3xl p-2">›</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Gadgets 4 Lifestyle</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Solar security and sustainable technology solutions for modern homes, businesses, and institutions across the Philippines.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Email:</span><br>
+                            gadgetsforlifestylehr@gmail.com
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Phone:</span><br>
+                            (02) 7148-7096
+                        </li>
+                        <li class="text-gray-300">
+                            <span class="text-blue-400 font-semibold">Location:</span><br>
+                            Parañaque City, Metro Manila, Philippines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.facebook.com/Gadgets4LifestylePH" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="images/facebook-logo.png" alt="Facebook" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.instagram.com/gadgets4lifestyle.ph/" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="images/instagram-logo.png" alt="Instagram" class="w-9 h-9">
+                        </a>
+                        <a href="https://www.youtube.com/@Gadgets4Lifestyle" class="social-icon flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img src="images/youtube-logo.png" alt="YouTube" class="w-9 h-9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2026 Gadgets 4 Lifestyle. All rights reserved.<br>
+                    Developed by Thea Fernando
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
